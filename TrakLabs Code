@@ -1,0 +1,15 @@
+TASK 1 AND 2:
+CREATE TABLE Employee ( 
+    EmpId varchar2(5) ,EmpName varchar2(50),Age number(10),DeptId varchar2(3),
+    constraint PK_EMPLOYEE primary key(EmpId),
+    constraint FK_DEPT foreign key(DeptId) 
+    references Department(DeptId));
+CREATE TABLE Department(
+    DeptId varchar2(3),DeptName varchar2(25),
+    constraint PK_DEPT primary key(Dept));
+    
+TASK 3:
+UPDATE EMPLOYEE SET DEPTNAME='TESTING' WHERE EMPID='M87';
+
+TASK 4:
+DELETE FROM EMPLOYEE WHERE EMPID='T45';
